@@ -1016,7 +1016,7 @@
 
   <button class="mode-toggle" id="modeToggle" aria-label="Cambiar a modo noche">&#127769;</button>
 
-  <audio id="bgMusic" src="placeholder-musica.mp3" loop preload="none"></audio>
+  <audio id="bgMusic" src="luna.mp3" loop preload="none"></audio>
 
   <!-- mensaje secreto, aparece al tocar la foto o el nombre -->
   <div class="note-modal" id="noteModal">
@@ -1162,7 +1162,7 @@
 
     <div class="section-heading">
       <span class="script">Momentos que quiero guardar</span>
-      <p>fotos y videos, con una pequeña historia cada uno — desliza para ver más</p>
+      <p>fotos y videos, con una gran historia cada uno</p>
     </div>
 
     <div class="carousel-block" id="photoCarouselBlock">
@@ -1204,7 +1204,7 @@
     <div class="tulip-border top" id="counterTopGarland"></div>
     <p class="counter-label script">Llevamos</p>
     <div class="counter-number" id="friendCounter">0</div>
-    <p class="counter-unit" id="counterUnit">días siendo amigos</p>
+    <p class="counter-unit" id="counterUnit">días siendo amigos, esa fue la fecha en que bailamos Diablada juntos desde ahi creo que noss volvimos más apegados</p>
   </section>
 
   <div class="divider">
@@ -1224,7 +1224,7 @@
     </div>
     <div class="letter-paper" id="letterPaper">
       <p class="letter-text script" id="letterText"></p>
-      <p class="letter-signature">— con cariño</p>
+      <p class="letter-signature">— con cariño para laa niña mas hermosa y con el mejor corazon que conozco</p>
     </div>
   </section>
 
@@ -1249,12 +1249,12 @@
       <circle cx="50" cy="50" r="12" fill="#7A4E1D"/>
     </svg>
     <p class="script">Gracias por ser tú</p>
-    <p>hecho con cariño — 21 de septiembre</p>
+    <p>hecho con cariño para la niña mas hermosa y dulce que conozco — 21 de septiembre</p>
     <div class="closing-actions">
       <button class="share-btn" id="shareBtn">Compartir este recuerdo</button>
-      <button class="share-btn video-btn" id="downloadVideoBtn">Descargar video (15s)</button>
+      <button class="share-btn video-btn" id="downloadVideoBtn">Guardar como video (15s)</button>
     </div>
-    <p class="video-hint" id="videoHint">arma un pequeño video con todo esto — se genera aquí mismo, en tu navegador</p>
+    <p class="video-hint" id="videoHint">Guarda este hermosso recuerdo en tu celular como un video</p>
   </section>
 
 <script>
@@ -1346,13 +1346,9 @@
       cambia los valores hex si quieres otra paleta.
    ===================================================================== */
 
-/* 🌷 Foto principal, dentro del marco de flores arriba del nombre 🌷 */
-const fotoPrincipal = { src: 'romi2.jpeg' };
-
-/* 🐾 Stickers (ej: Snoopy, Bluey) — usa PNG con fondo transparente 🐾 */
 const stickers = [
-  { src:'placeholder-portada1.png', target:'.cover', top:'12vh', left:'7vw',  width:'92px', rot:'-9deg' },
-  { src:'placeholder-portada2.png', target:'.cover', bottom:'10vh', right:'8vw', width:'88px', rot:'8deg' },
+  { src:'snoopy1.png', target:'.cover', top:'12vh', left:'7vw',  width:'200px', rot:'-9deg' },
+  { src:'b3.png', target:'.cover', bottom:'10vh', right:'8vw', width:'250px', rot:'8deg' },
   { src:'b1.png', target:'.hero',     top:'9vh',  left:'5vw',  width:'110px', rot:'-8deg' },
   { src:'snoopy3.png', target:'.hero',     top:'7vh',  right:'6vw', width:'104px', rot:'7deg'  },
   { src:'b2.png', target:'.memories', top:'3vh',  right:'4vw', width:'100px', rot:'6deg'  },
@@ -1360,7 +1356,7 @@ const stickers = [
 ];
 
 /* 💌 Mensaje secreto al tocar la foto o el nombre 💌 */
-const mensajeSecreto = 'Escribe aquí el mensaje que quieres que aparezca cuando toque tu foto o tu nombre. Puede ser tan largo o tan corto como quieras.';
+const mensajeSecreto = 'Te quiero con todo mi corazon Romi como te lo dije quiero conccocerte más para ver si lo nuestro se puede dar porque enserio creo que me estoy enamorando de ti';
 
 /* 🌻 Cosas que admiras de ella — agrega o quita las que quieras 🌻 */
 const cosasQueAdmiro = [
@@ -1384,25 +1380,26 @@ const memorias = [
     tipo:'foto',
     src:'romi1.jpeg',
     descripcion:'La forma en la que bailas parece contar una historia distinta cada vez.',
-    etiqueta:'Agrega una foto aquí'
   },
   {
     tipo:'video',
     src:'romi5.mp4',
     descripcion:'Este momento merecía quedar guardado para siempre.',
-    etiqueta:'Agrega un video aquí'
+  },
+  {
+    tipo:'video',
+    src:'romiv2.mp4',
+    descripcion:'Solo con verte bailar alegras a muchas personas',
   },
   {
     tipo:'foto',
-    src:'romi2.jpeg',
+    src:'Romi12.png',
     descripcion:'Una sonrisa tuya y el día ya vale la pena.',
-    etiqueta:'Agrega una foto aquí'
   },
   {
     tipo:'foto',
     src:'romi3.jpeg',
-    descripcion:'Gracias por llenar de color hasta los días grises.',
-    etiqueta:'Agrega una foto aquí'
+    descripcion:'Gracias por llenar de color hasta los días más grises.',
   }
 ];
 
